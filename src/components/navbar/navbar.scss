@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@300&display=swap');
+.navbar{
+     position: fixed;
+     z-index: 1;
+     background-color: rgba($color: #024575, $alpha: 0.8);
+     right: 0;
+     padding-top: 7px;
+     padding-bottom: 7px;
+     width: 51.5%;
+     opacity: 0.85;
+     border-bottom-left-radius: 50px;
+     transition: .4s;
+}
+.logo{
+     height: 49px;
+     width: 156px;
+     background-image: url('../../images/logo.png');
+     background-size: contain;
+     margin-right: 30rem;
+     cursor: pointer;
+}
+.navbar-text{
+     font-family: PT Sans;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 20px;
+     margin-left: 3rem;
+     letter-spacing: 0.1em;
+     &:hover{
+          transition: .2s;
+          color: #fff;
+          cursor: pointer;
+     }
+}
+
+.nav-scrolled{
+     position: fixed;
+     z-index: 5;
+     background-color: rgba($color: #fff, $alpha: 1);
+     right: 0;
+     width: 100%;
+     transition: .4s;
+     .navbar-text{
+          padding-top: 0.75rem;
+          &:hover{
+               transition: .2s;
+               color: #024575;
+          }
+     }
+}
+.navbar-items{
+     transition: .4s;
+     display: flex;
+     flex-direction: row;
+     right: 0;
+}

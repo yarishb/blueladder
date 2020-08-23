@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import './App.scss';
+import Home from './pages/home/Home';
+import Navbar from './components/navbar/Navbar' 
 
 function App() {
+
+  const [scrolled, setScrolled] = useState(false)
+
+  window.addEventListener("scroll", () => {
+      const isTop = window.scrollY < 100
+      if(isTop === true){
+          setScrolled( false )
+      }else{
+          setScrolled( true )
+      }
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="home">
+        <Navbar windowScroll={scrolled}/>
+        <Home />
+      </div>
+    </>
   );
 }
 
