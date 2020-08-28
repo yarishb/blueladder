@@ -1,21 +1,30 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './home.scss'
+
+import { NavLink } from "react-router-dom";
 import Tilt from 'react-tilt'
 
-import slider1 from '../../images/slider1.jpg'
-import slider2 from '../../images/slider2.jpg'
-import slider3 from '../../images/slider3.jpg'
-import worker from '../../images/pngbarn.png'
-import call from '../../images/call.png'
+//Images
+import slider1 from '../../images/home/slider1.jpg'
+import slider2 from '../../images/home/slider2.jpg'
+import slider3 from '../../images/home/slider3.jpg'
+import worker from '../../images/home/pngbarn.png'
+import call from '../../images/home/call.png'
 import mail from '../../images/contacts/mail.png'
 import phone from '../../images/contacts/phone.png'
 import telegram from '../../images/contacts/telegram.png'
 import instagram from '../../images/contacts/instagram.png'
 
+//Components
 import Video from '../../components/video/Video'
 import Location from '../../components/location/Location'
 
 function Home() {
+
+     useEffect(() => {
+          window.scrollTo(0, 0)
+     }, [])
+
      return (
           <>
              <div className="header">
@@ -28,21 +37,21 @@ function Home() {
              <div className="our-project">
                <div className="our-projects-text">
                     <div className="header-logo desc">Our projects</div>
-                    <div className="more projects">MORE</div>
+                    <NavLink className="link" to="/projects"><div className="more projects">MORE</div></NavLink>
                </div>
                <div className="items-projects">
-                    <Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
+                    <NavLink to="/projects"><Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
                          <div className="Tilt-inner"><img alt="img" className="slide-img"src={slider1}/></div>
-                    </Tilt>
+                    </Tilt></NavLink>
                     <div className="second-img">
-                    <Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
+                    <NavLink to="/projects"><Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
                          <div className="Tilt-inner"><img alt="img" className="slide-img slide-img-2"src={slider2}/></div>
-                    </Tilt>
+                    </Tilt></NavLink>
                     </div>
                     <div className="second-img">
-                    <Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
+                    <NavLink to="/projects"><Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
                          <div className="Tilt-inner"><img alt="img" className="slide-img slide-img-2"src={slider3}/></div>
-                    </Tilt>
+                    </Tilt></NavLink>
                     </div>
                </div>
                <div className="projects-bg"></div>
@@ -50,7 +59,7 @@ function Home() {
              <div className="about-us">
                <div className="our-projects-text">
                     <div className="header-logo desc">About us</div>
-                    <div className="more projects">MORE</div>
+                    <NavLink className="link" to="/about"><div className="more projects">MORE</div></NavLink>
                </div>
                <img src={worker} className="worker" alt="img"/>
                <div className="about-text">

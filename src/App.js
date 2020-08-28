@@ -1,7 +1,13 @@
 import React, {useState} from 'react';
 import './App.scss';
+//Components and pages
 import Home from './pages/home/Home';
 import Navbar from './components/navbar/Navbar' 
+import Projects from './pages/projects/Projects'
+
+// React router
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import About from './pages/about/About';
 
 function App() {
 
@@ -16,14 +22,25 @@ function App() {
       }
   })
 
+ 
   return (
     <>
-      <div className="home">
+      <Router>
         <Navbar windowScroll={scrolled}/>
-        <Home />
-      </div>
+          <Switch>
+            <Route exact path={"/"} component={Home}/>
+            <Route path={"/projects"} component={Projects}/>
+            <Route path={"/about"} component={About}/>
+          </Switch>
+        </Router>
     </>
   );
 }
 
 export default App;
+
+
+// Зробити:
+
+// 2) Сторінку для відсилання запитів
+// 3) Адмін панель з входом і юзерами які залишили запити

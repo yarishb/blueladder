@@ -1,0 +1,159 @@
+.header{
+     .header-bg{
+          width: 100%;
+          height: 20rem;
+          background-image: url("https://images.squarespace-cdn.com/content/v1/5a58368b2278e7f441827ec2/1548297694088-0OH3DEE1P8RMOGFZM73L/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/2-Contemporary-Living-Room-Top-Decorator-Best-Interior-Designers-Boston-South-End-Back-Bay-Seaport-Dane-Austin-Design.jpg?format=2500w");
+          opacity: 0.3;
+            /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+     }
+     .header-text{
+          margin-top: 1rem;
+          font-size: 75px;
+     }
+}
+.why-us{
+     font-size: 50px;
+     margin: 5rem 1rem 1rem 3rem;
+}
+.about-items{
+     margin-top: 2rem;
+     margin-left: 3rem;
+     display: flex;
+     justify-content: center;
+     .about-item{
+          margin-right: 5rem;
+          box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+          .about-item-desc{
+               padding-top: 1rem;
+               padding-bottom: 1rem;
+               text-align: center;
+               background-color: #d6e0f0;
+               font-size: 25px;
+               transition: .4s;
+          }
+          .about-item-top{
+               display: flex;
+               justify-content: center;
+               width: 14rem;
+               height: 20rem;
+               background-color: #8d93ab;
+               opacity: 0.7;
+               z-index: -1;
+               .about-item-circle{
+                    background-color: #d6e0f0;
+                    height: 13rem;
+                    border-radius: 100%;
+                    width: 12rem;
+                    margin-top: 2rem;
+                    z-index: 1;
+                    .about-svg{
+                         width: 12.5rem;
+                    }
+                    .worker-svg{
+                         padding-left: 1rem;
+                         width: 10rem;
+                    }
+               }
+          }
+     }
+}
+
+.about-projects{
+     margin-top: 7rem;
+     position: relative;
+     .projects-bg{
+          background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/room-divider-ideas-tranebergsva-gen-stockholm-living-room-industry-fantastic-frank-popular-copy-1561401887.jpg");
+          height: 40rem;
+          opacity: 0.3;
+          background-attachment: fixed;
+     }
+     .about-img{
+          position: absolute;
+          top: -29px;
+          right: 3rem;
+          height: 35rem;
+          width: 47rem;
+     }
+     .about-subimg{
+          z-index: 10;
+          width: 8rem;
+          height: 7rem;
+          margin-right: 1.5rem;
+          transition: .2s;
+          &:hover{
+               transition: .2s;
+               box-shadow: 0 0 20px rgba(0,0,0,0.5);           
+          }
+     }
+     .about-subimages{
+          position: absolute;
+          bottom: -42rem;
+          right: 17rem;
+          cursor: pointer;
+     }
+}
+
+.about-worker-text{
+     left: 3rem;
+     top: -7rem;
+     .button-about{
+          font-size: 21px;
+          padding-top: 0.7rem;
+          padding-bottom: 0.7rem;
+          width: 8.3rem;
+          border: 0;
+          border: 2px solid #024575;
+          &:hover{
+               transition: .4s;
+               background-color: #fff;
+               border: 2px solid #024575;
+          }
+     }
+     .about-text-header{
+          font-size: 35px;
+     }
+     .about-text-desc{
+          font-size: 30px;
+          width: 70%;
+     }
+}
+
+.worker-about{
+     position: relative;
+     margin-top: 59rem;
+     .header-bg-worker{
+          background-image: url("https://media2.s-nbcnews.com/i/newscms/2018_13/2378671/180327-design-interior-ac-632p_45a8c41e1ebaa40779301cb4922ea6a3.jpg");
+          background-size: cover;
+          position: absolute;
+          width: 100%;
+          height: 40rem;
+          background-attachment: fixed;
+          z-index: -1;
+          opacity: 0.3;
+     }
+     .worker-about-text{
+          padding-top: 4rem;
+          margin-left: 3rem;
+          .about-worker-text-header{
+               font-size: 35px;
+               margin-bottom: 1rem;
+          }
+          .about-worker-text-desc{
+               width: 50%;
+               font-size: 30px;
+          }
+     }
+     .worker-about-img{
+          position: absolute;
+          right: 0;
+          top: 0;
+     }
+}
+
+.location-about{
+     margin-top: 30rem;
+}

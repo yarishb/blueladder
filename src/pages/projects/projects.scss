@@ -1,0 +1,79 @@
+.headerBg{
+     width: 51rem;
+     height: 40rem;
+}
+.top{
+     padding-top: 5rem;
+     margin-left: 3rem;
+     display: flex;
+     position: relative;
+     flex-direction: row;
+}
+
+.headerText{
+     margin-top: 3rem;
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     color: black;
+     right: 5rem;
+     .header{
+          font-size: 50px;
+     }
+     .under-header{
+          font-size: 25px;
+     }
+     .description{
+          margin-top: 1rem;
+          font-size: 20px;
+          width: 25rem;
+     }
+}
+.button{
+     margin-top: 3rem;
+     background-color: rgba($color: #024575, $alpha: 0.8);
+     font-size: 25px;
+     border: 2px solid #fff;
+     transition: .4s;
+     padding-top: 0.5rem;
+     padding-bottom: 0.5rem;
+     width: 9rem;
+     text-align: center;
+     &:hover{
+          transition: .4s;
+          background-color: #fff;
+          border: 2px solid #024575;
+          cursor: pointer;
+     }
+}
+
+.projectsAll{
+     margin-left: 3rem;
+     width: auto;
+     position: relative;
+     .projectButtons{
+          display: flex;
+          flex-direction: row;
+     }
+     .between{
+          margin-top: 3rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          font-size: 39px;
+     }
+     .project{
+          margin-top: 3rem;
+          display: flex;
+          flex-wrap: wrap;
+     }
+     .projects-item{
+          margin-top: 2rem;
+          margin-right: 3rem;
+          cursor: pointer;
+     }
+     .project-img{
+          width: 25.5rem;
+          height: 21rem;
+     }
+}
+

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .image{
-     background-image: url('../../images/header.jpg');
+     background-image: url('../../images/home/header.jpg');
      background-size: cover;
      border-bottom-left-radius: 40px;
      border-bottom-right-radius: 40px;
@@ -42,7 +42,7 @@
 }
 
 .projects-bg{
-     background-image: url("../../images/interior.jpg");
+     background-image: url("../../images/home/interior.jpg");
      background-size: cover;
      position: absolute;
      width: 100%;
@@ -52,7 +52,7 @@
 }
 
 .bg-2{
-     background-image: url("../../images/slider5.jpg");
+     background-image: url("../../images/home/slider5.jpg");
      height: 50rem;
 }
 
@@ -155,7 +155,7 @@
 }
 
 .bg-4{
-     background-image: url('../../images/slider8.jpg');
+     background-image: url('../../images/home/slider8.jpg');
      height: 40rem;
 }
 
@@ -190,4 +190,5 @@
 
 .link{
      color: black;
+     text-decoration: none;
 }
