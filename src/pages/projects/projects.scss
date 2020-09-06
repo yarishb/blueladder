@@ -16,7 +16,7 @@
      flex-direction: column;
      position: absolute;
      color: black;
-     right: 5rem;
+     right: 2rem;
      .header{
           font-size: 50px;
      }
@@ -49,7 +49,6 @@
 
 .projectsAll{
      margin-left: 3rem;
-     width: auto;
      position: relative;
      .projectButtons{
           display: flex;
@@ -67,13 +66,55 @@
           flex-wrap: wrap;
      }
      .projects-item{
-          margin-top: 2rem;
-          margin-right: 3rem;
+          margin-right: 0;
           cursor: pointer;
      }
      .project-img{
-          width: 25.5rem;
-          height: 21rem;
+          width: 23rem;
+          height: 19rem;
+     }
+}
+@media screen and (max-width: 320px){
+     .button{
+          margin-top: 3rem;
+          padding-bottom: 0.3rem;
+          width: 7rem;
+          font-size:20px;
      }
 }
 
+@media screen and(max-width: 900px){
+     .projectsAll{
+          margin-top: 30rem;
+     }
+     .headerBg{
+          display:none;
+     }
+     .projectsAll{
+          margin-left: 0.5rem;
+          position: relative;
+          .project-img{
+               position:absolute;
+               width: 18rem;
+               height: 16rem;
+          }
+          .project{
+               margin-left: 0.5rem;
+               margin-top: 3rem;
+          }
+          .between{
+               margin-top: 3rem;
+               margin-left: 0.5rem;
+               margin-right: 0.5rem;
+               font-size: 39px;
+          }
+     }
+     .headerText{
+          position: absolute;
+          left: -1.5rem;
+          .description{
+               font-size: 20px;
+               width: 20rem;
+          }
+     }
+}

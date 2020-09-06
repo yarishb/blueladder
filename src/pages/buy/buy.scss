@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+
+.full-page{
+    .buy{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        .buy-bg{
+            background-image: url("https://images.squarespace-cdn.com/content/v1/5d4bc9ef1d80190001a4b482/1569497808267-P8GCG7QGA8LJS3ZEYEIG/ke17ZwdGBToddI8pDm48kCrNPKB8xSe_BQR9Q6xTmXx7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UZo9jTfS9mnqDAEkWhoT-2cGcZu8cWlK9Ql81HCbB0j1VMfZ_fU2mqhXiOYZfVnqnQ/orchid-1.jpg?format=1500w");
+            background-size: cover;
+            position: absolute;
+            width: 70rem;
+            height: 35rem;
+            opacity: 0.7;
+            z-index: 1;
+        }
+    }
+    .buy-form{
+        z-index: 2;
+        width: 30rem;
+        height: 34rem;
+        margin-top: 0.5rem;
+        position: absolute;
+        background-color: #fff;
+        left: 4.5rem;
+        .buy-form-inside{
+            margin-top: 1.5rem;
+            margin-left: 3rem;
+        }
+        .buy-header{
+            display: flex;
+            flex-direction: row;
+            font-size: 40px;
+            font-family: Roboto;
+            .blue{
+                color: #024575;
+            }
+        }
+        .form-submit{
+            margin-top: 1rem;
+            width: 8rem;
+            height: 2rem;
+            text-decoration: none;
+            border: 0;
+            font-family: Roboto;
+            border: 2px solid #024575;
+            background-color: #024575;
+            font-size: 20px;
+            transition: .4s;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                background-color: #fff;
+                transition: .4s;
+                border: 2px solid #024575;
+                color: #000;
+            }
+        }
+    }
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 125%;
+  border: 0;
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 25px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 2px;
+  border-image: linear-gradient(#fff, #024575);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+  color: #000;
+}
+
+.select{
+    margin-top: 1.5rem;
+    width: 17rem;
+    text-decoration: none;
+    border: 1px solid #024575;
+    padding: 4px 4px 4px;
+    font-size: 20px;
+    font-family: Roboto;
+}
+
+.error-handler{
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: -400px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 20px;
+  font-family: Roboto;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 0;
+  animation: slide 0.5s forwards;
+  background-color: rgba($color: red, $alpha: 0.8);
+}
+
+.success{
+  background-color: #a2d5f2;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+}
+
+@media screen and(max-width: 900px){
+  .full-page{
+    zoom: 90%;
+    position: absolute;
+    .buy{
+      margin-top: 5rem;
+        left: 0%;
+        top: 0%;
+        width: 1rem;
+        height: 1rem;
+        .buy-bg{
+          width: 0;
+          height: 0;
+          display:none;
+        }
+    }
+    .buy-form{
+      width: 30rem;
+      height: 34rem;
+      margin-top: 0.5rem;
+      position: absolute;
+      background-color: #fff;
+      left: 5rem;
+    }
+  }
+}

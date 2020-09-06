@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+$blue: #024575;
+.admin-block{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+    top: 10%;
+    left: 37%;
+    width: 20rem;
+    height: 30rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2); 
+}
+
+  .admin-svg{
+    position: absolute;
+    padding-top: 2rem;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .inputs{
+    position: absolute;
+    left: 17%;
+    margin-top: 14em;
+    width: 100%;
+  }
+
+  .form-submit{
+    margin-top: 1.5rem;
+    width:12.5rem;
+    height: 2rem;
+    border: 2px solid $blue;
+    background-color: rgba($color: $blue, $alpha: 0.7);
+    font-size: 20px;
+    padding-top: 3px;
+    transition: .4s;
+    &:hover{
+      transition: .4s;
+      background-color: #fff;
+      border: 2px solid $blue;
+    }
+    cursor: pointer;
+  }

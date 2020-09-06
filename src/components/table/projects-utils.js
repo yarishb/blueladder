@@ -76,7 +76,7 @@ export const interiors = [
 export const exteriors = [
           {
           id: 19,
-          image: "https://lh3.googleusercontent.com/proxy/DyH9JU1Xf5-rlZgY02pBE3eINnq7nkhhfCUEkY_igGFVElcJ-KMcdaJmZGgLbd1TcSRE4KhcaDdd-tXk-hOT41mB5_FmRTSqcSBmf040x-1LIvZ-tenF-p3ijCM-_ve8u0NlPEvU3ZKKinBNIdCG0icG_81fh8DpHto4MCwt-MwBDIqLIMRfWfI-",
+          image: "https://bixideco.com/wp-content/uploads/2018/05/Houses-with-exterior-designs-in-modern-style9-670x500.jpg",
      },
      {
           id: 20,
@@ -88,7 +88,7 @@ export const exteriors = [
      },
      {
           id: 22,
-          image: "https://lh3.googleusercontent.com/proxy/4-eJjc0IAwvrh7t8tuO7XSgXurYofhc-A2G7L5_S7qsShM3lHv-Yl-GLEmYDZEHHWHbylK30SCMXFxbAtItGJCvmUTkXVB6_A5UUScV3ur_4ESOcC-TXP9JyGuHXf4-L7gCGX799tf0u9tNVTx-oER-dV-33KMjSzsUIrxC4-gHGDJiVXcHfDsLF7YnDFwYD_bcmRTzB21znHdG_",
+          image: "https://thearchitecturedesigns.com/wp-content/uploads/2019/11/Scandinavian-Home-Exterior2.jpg",
      },
      {
           id: 23,
@@ -132,7 +132,7 @@ export const exteriors = [
      },
      {
           id:33,
-          image: "https://lh3.googleusercontent.com/proxy/zXyLe3BYex-mSor-aj-SAEdgRulKoQFk60dBqNhIi2bw5zbo2bOEHp7UewbV6knS0I2vLpNJE9N93ldSC9Z_y9Ka4FHW_mtNvsUK7LBle4yNF8Q1LXXSkBf9ddW2-BUcBPMBYG8FW5gdoWTQVcut8_2J3ch8VLOIpGFbSWZ1Oo3XUNMFpFfBHsS4ReXAQe6y",
+          image: "https://i.pinimg.com/originals/78/ce/9b/78ce9b7a820a3a4c4a4e33a1509d79b2.jpg",
      },
      {
           id:34,

@@ -40,18 +40,23 @@ function Home() {
                     <NavLink className="link" to="/projects"><div className="more projects">MORE</div></NavLink>
                </div>
                <div className="items-projects">
-                    <NavLink to="/projects"><Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
-                         <div className="Tilt-inner"><img alt="img" className="slide-img"src={slider1}/></div>
-                    </Tilt></NavLink>
+                    <div className="project">
+                    <NavLink to="/projects" ><Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
+                         <div className="Tilt-inner"><img alt="img" className="slide-img slide-img-1"src={slider1}/></div>
+                    </Tilt></NavLink></div>
                     <div className="second-img">
-                    <NavLink to="/projects"><Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
+                    <div className="project">
+                    <NavLink to="/projects" className="project"><Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
                          <div className="Tilt-inner"><img alt="img" className="slide-img slide-img-2"src={slider2}/></div>
                     </Tilt></NavLink>
                     </div>
+                    </div>
                     <div className="second-img">
-                    <NavLink to="/projects"><Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
+                    <div className="project">
+                    <NavLink to="/projects" className="project"><Tilt className="Tilt" options={{ max : 15 }} style={{ height: 350, width: 350 }} >
                          <div className="Tilt-inner"><img alt="img" className="slide-img slide-img-2"src={slider3}/></div>
                     </Tilt></NavLink>
+                    </div>
                     </div>
                </div>
                <div className="projects-bg"></div>
@@ -74,12 +79,12 @@ function Home() {
              </div>
                <div className="working-video">
                     <div className="video"><Video/></div>
-               </div>
+                </div>
                <div className="location">
                <div className="our-projects-text">
                     <div className="header-logo desc">Location</div>
                </div>
-                    <Location />
+                    <Location width={window.innerWidth}/>
                </div>
                <div className="contacts">
                <div className="our-projects-text">
@@ -103,7 +108,7 @@ function Home() {
                          <div className="contacts-info-text">_yarish</div>
                     </div>
                </div>
-               <img src={call} className="worker call" alt="img"/>
+                    <img src={call} className="worker call" alt="img"/>
                <div className="projects-bg bg-4"></div>
                </div>
           </>

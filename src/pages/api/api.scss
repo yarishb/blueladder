@@ -1,0 +1,72 @@
+.admin-logo{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    .admin-image{
+        width: 3rem;
+        height: 3rem;
+    }
+    .admin-logo-text{
+        font-size: 35px;
+        padding-left: 10px;
+    }
+}
+
+.customers{
+    position: absolute;
+    margin-top: 10rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    .customers-header{
+        font-size: 40px;
+    }
+}
+
+.api-delete{
+    background-color: grey;
+    color:#fff;
+}
+
+.element{
+    display: flex;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    .element-persone{
+        display: flex;
+        flex-direction: row;
+    }
+    .element-name{
+        padding: 0.5rem 0 0.5rem 1rem;
+        background-color: rgba($color: #ccafaf, $alpha: 0.3);
+        font-size: 20px;
+    }
+    .value{
+        width: 7rem;
+        padding-top: 0.5rem;
+        font-size: 20px;
+        padding-left: 0.3rem;
+        padding-right: 5rem;
+        background-color: rgba($color: #ccafaf, $alpha: 0.3);
+    }
+    .email{
+        width: 15rem;
+    }
+    .delete{
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        transition: .4s;
+        background-color: grey;
+        border: 2px solid grey;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover{
+            transition: .4s;
+            background-color: #fff;
+            border: 2px solid grey;
+        }
+    }
+}

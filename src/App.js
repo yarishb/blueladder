@@ -8,6 +8,10 @@ import Projects from './pages/projects/Projects'
 // React router
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import About from './pages/about/About';
+import Buy from './pages/buy/Buy';
+import AdminLog from './pages/admin/Admin-log';
+import Api from './pages/api/Api'
+import Mobile from './components/navbar/Mobile';
 
 function App() {
 
@@ -26,11 +30,19 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar windowScroll={scrolled}/>
+        {
+          window.innerWidth > 900?
+           <Navbar windowScroll={scrolled} />
+          :
+          <Mobile/>            
+        }
           <Switch>
             <Route exact path={"/"} component={Home}/>
             <Route path={"/projects"} component={Projects}/>
             <Route path={"/about"} component={About}/>
+            <Route path={"/buy-info"} component={Buy}/>
+            <Route path={'/admin'} component={AdminLog}/>
+            <Route path={'/api'} component={Api}/>
           </Switch>
         </Router>
     </>

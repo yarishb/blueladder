@@ -23,8 +23,10 @@
      margin-top: 2rem;
      margin-left: 3rem;
      display: flex;
+     flex-wrap: wrap;
      justify-content: center;
      .about-item{
+          margin-top: 1rem;
           margin-right: 5rem;
           box-shadow: 0 0 20px rgba(0,0,0,0.5); 
           .about-item-desc{
@@ -156,4 +158,56 @@
 
 .location-about{
      margin-top: 30rem;
+}
+
+@media screen and (max-width: 900px){
+     .header{
+          .header-text{
+               margin-top: 5rem;
+               font-size: 40px;
+          }
+     }
+     .about-images{
+          display: none;
+     }
+     .about-subimages{
+          display:none;
+     }
+     .about-worker-text{
+          .about-text-header{
+               font-size: 27px;
+               font-weight: bold;
+          }
+          .about-text-desc{
+               padding-top: 1rem;
+               font-size: 22px;
+               width: 15rem;
+          }
+     }
+     .worker-about-img{
+          display:none;
+     }
+     .about-worker-text-header{
+          font-size: 27px;
+          font-weight: bold;
+     }
+     .worker-about{
+          .worker-about-text{
+               padding-top: 2rem;
+               margin-left: 1rem;
+               .about-worker-text-header{
+                    font-size: 35px;
+                    margin-bottom: 1rem;
+               }
+               .about-worker-text-desc{
+                    width: 100%;
+                    font-size: 30px;
+               }
+          }
+          .worker-about-img{
+               position: absolute;
+               right: 0;
+               top: 0;
+          }
+     }
 }
